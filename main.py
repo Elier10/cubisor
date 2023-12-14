@@ -5,6 +5,6 @@ from functions import CUBISOR
 app = FastAPI()
 
 @app.get("/cubisor/data")
-def get_data(data: Code):
-    CUBISOR()
+def get_data():
+    #CUBISOR()
     return {"Hello": "World"}
