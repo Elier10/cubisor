@@ -1,3 +1,4 @@
+import requests
 from fastapi import FastAPI, APIRouter
 from models import Code
 from functions import CUBISOR
