@@ -6,5 +6,5 @@ app = FastAPI()
 
 @app.get("/cubisor/data")
 def get_data():
-    response = requests.get(http://localhost:8000/cubisor/data)
+    response = requests.get(r"http://localhost:8000/cubisor/data")
     return response
