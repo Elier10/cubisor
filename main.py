@@ -6,5 +6,8 @@ app = FastAPI()
 
 @app.get("/cubisor/data")
 def get_data():
-    #CUBISOR()
-    return {"Hello": "World"}
+    try:
+        list = CUBISOR()
+    except:
+        pass
+    return {"Hello": "World", "data":list}
