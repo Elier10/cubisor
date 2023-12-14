@@ -8,7 +8,6 @@ app = FastAPI()
 def get_data():
     try:
         list = CUBISOR()
-        c1 = "entró al cubisor"
     except:
         list = "algo"
-    return {"Hello": "World", 'c1': c1}
+    return {"Hello": "World Cubisor"}
