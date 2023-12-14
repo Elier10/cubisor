@@ -6,8 +6,5 @@ app = FastAPI()
 
 @app.get("/cubisor/data")
 def get_data():
-    try:
-        list = CUBISOR()
-    except:
-        list = "algo"
-    return {"Hello": "World Cubisor"}
+    response = requests.get(http://localhost:8000/cubisor/data)
+    return response
